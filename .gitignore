@@ -2,3 +2,4 @@
 ./log/*
 ./case/*
 ./api_case
+*.pyc

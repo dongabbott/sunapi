@@ -1,7 +1,7 @@
 project: 中端管理测试接口测试
 # api地址管理
 address:
-    host: http://sendsms.cronus.manager.sunlands
+    host: http://
     port: 80
 
 # 测试用例配转走
@@ -12,11 +12,11 @@ testcase:
 # 数据库地址管理
 database:
     class: mysql
-    host: 172.16.225.15
+    host: 127.0.0.1
     port: 3306
     db: zeus
     user: root
-    password: fadskfhld
+    password: *******
     # charset: utf-8
 # 日志管理
 logger:
