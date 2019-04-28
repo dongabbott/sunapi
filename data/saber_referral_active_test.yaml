@@ -1,0 +1,73 @@
+case_suite: saber_referral_active_test
+descrpiton: 小程序转介绍活动后台管理接口测试
+moduels:
+  - moduel_class: TestReferralRules
+    desc: 转介绍规则
+    cases:
+      - story: test_referral_rule_list
+        desc: 默认规则列表查询
+        uri: /saber/backend/rule
+        method: post
+        headers:
+        type: data
+        data:
+          activity_end_at: '2019-04-06T23:59:59+08:00'
+          activity_start_at: '2019-02-23T00:00:00+08:00'
+          division: 中端
+          page: 1
+          page_size: 30
+        auth_user:
+          u: dongjie02
+        set_up:
+        tear_down:
+        asserts:
+          body.status: '00000'
+          body.data.orgArr[0]: '集团管理层'
+
+      - story: test_referral_rule_org_search
+        desc: 规则列表子军团查询
+        uri: /saber/backend/rule
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          activity_end_at: 2019-04-06T23:59:59+08:00
+          activity_start_at: 2019-02-23T00:00:00+08:00
+          division: 中端
+          orgName1: 全国分校
+          page: 1
+          page_size: 30
+        auth_user:
+          u: dongjie02
+        set_up:
+        tear_down:
+        asserts:
+          body.status: '00000'
+
+      - story: test_referral_rule_add_reward
+        desc: 创建奖金活动规则
+        uri: /saber/backend/rule/create-or-update
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          time_rule_id: '1'
+          activity_end_at: '2019-03-31'
+          activity_start_at: '2019-03-01'
+          division: 中端
+          orgName1: 中端产品研发部
+          award_type: 奖金
+          award_name: 测试活动－${chinese(8)|libs.keywords}
+          award_money_json: '300'
+          content: ${chinese(20)|libs.keywords}
+          bg_color_hex: '#e6a23c'
+          status: 0
+        auth_user:
+          u: dongjie02
+        set_up:
+        tear_down:
+          sql: ${mysql_select("delete from saber_rule where orgName1='中端产品研发部'")|libs.db_cil}
+        asserts:
+          body.status: '00000'

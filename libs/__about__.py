@@ -1,0 +1,5 @@
+__title__ = 'httpyer'
+__description__ = 'http接口测试'
+__version__ = '1.0.1'
+__author__ = 'dongjie02'
+__author_email__ = 'd1988505j@163.com'

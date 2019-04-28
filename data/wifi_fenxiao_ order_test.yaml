@@ -1,0 +1,101 @@
+case_suite: wifi_fenxiao_order_test
+descrpiton: 测试分校预约相关功能
+moduels:
+  - moduel_class: TestFenXiaoOrder
+    desc: 分校预约
+    cases:
+      - story: test_get_adivser_detail
+        desc: 获取客顾详细
+        uri: /wifi/v1/frontend/order/adviser-detail
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          openid: oGCgV0W-wQLz8rZDDsqZLFgwWboM
+          adviser_id: 53
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200
+
+      - story: test_get_adivser_scheduling
+        desc: 获取课顾排班
+        uri: /wifi/v1/frontend/order/select-scheduling
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          openid: oGCgV0W-wQLz8rZDDsqZLFgwWboM
+          adviser_id: 53
+          statr_time: 2019-03-28
+          end_time: 2019-04-03
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200
+
+      - story: test_get_school_adivser
+        desc: 获取校区课顾
+        uri: /wifi/v1/frontend/school/school-adviser
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          school_id: 5080
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200
+
+      - story: test_get_school_directions
+        desc: 获取校区线路指导
+        uri: /wifi/v1/frontend/school/directions
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          school_id: 5080
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200
+
+      - story: test_get_school_detail
+        desc: 获取校区详细信息
+        uri: /wifi/v1/frontend/school/detail
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          school_id: 5080
+          lon: 114.4199
+          lan: 30.4745
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200
+
+      - story: test_get_user_orders
+        desc: 获取个人预约单
+        uri: /wifi/v1/frontend/order/index
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          openid: oGCgV0W-wQLz8rZDDsqZLFgwWboM
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200

@@ -1,0 +1,23 @@
+case_suite: saber_statistics_card_test
+descrpiton: 小程序名片数据分析
+moduels:
+  - moduel_class: TestCardStatistics
+    desc: 测试名片数据分析
+    cases:
+      - story: test_total_statistics
+        desc: 测试总计
+        uri: /saber/backend/card-statistics/statistics-total
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          start_time: '2019-03-01'
+          end_time: '2019-03-29'
+        auth_user:
+          u: dongjie02
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.code: 200

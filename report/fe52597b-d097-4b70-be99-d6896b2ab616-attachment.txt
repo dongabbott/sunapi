@@ -1,0 +1,45 @@
+logs.py                     60 DEBUG    发送请求地址: http://sendsms.cronus.manager.sunlands/wifi/v1/frontend/school/detail	POST	
+logs.py                     60 DEBUG    发送请求数据: {'school_id': '5080', 'lon': '114.4199', 'lan': '30.4745'}	
+logs.py                     60 DEBUG    返回请求地址: http://sendsms.cronus.manager.sunlands/wifi/v1/frontend/school/detail	200	104.388ms
+logs.py                     60 DEBUG    返回请求头:
+{
+    "Server": "nginx/1.12.2",
+    "Date": "Thu, 28 Mar 2019 08:16:19 GMT",
+    "Content-Type": "application/json; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Keep-Alive": "timeout=100",
+    "X-Powered-By": "PHP/7.1.18",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "POST,DELETE,GET,OPTIONS",
+    "Access-Control-Allow-Headers": "x-requested-with,content-type,token",
+    "Access-Control-Expose-Headers": "token",
+    "Access-Control-Max-Age": "3600",
+    "Connection": "keep-alive"
+}
+logs.py                     60 DEBUG    请求结果:
+{
+    "resultMark": "success",
+    "code": 200,
+    "data": {
+        "school": {
+            "id": "5080",
+            "school_name": "南昌校",
+            "province_name": "江西省",
+            "city_name": "南昌",
+            "start_time": "9:00 - 21:00",
+            "longitude": "115.90652",
+            "latitude": "28.67047",
+            "address": "南昌市西湖区广场南路205号恒茂国际华城16栋B座2010室",
+            "phone": "0791-86150009",
+            "delete_flag": "0"
+        },
+        "banners": []
+    },
+    "message": ""
+}
+
+logs.py                     60 DEBUG    断言对象:http_code
+logs.py                     60 DEBUG    断言对象取值:200
+logs.py                     60 DEBUG    断言对象:body.code
+logs.py                     60 DEBUG    断言对象取值:200

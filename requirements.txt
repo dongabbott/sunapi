@@ -1,0 +1,14 @@
+virtualenv
+requests
+sqlalchemy
+selenium
+mimesis
+pymysql
+pytest
+pytest-allure
+coloredlogs
+pyyaml
+ruamel.yaml
+click
+requests_toolbelt
+redis

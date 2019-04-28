@@ -1,0 +1,41 @@
+project: 中端管理测试接口测试
+# api地址管理
+address:
+    host: http://sendsms.cronus.manager.sunlands
+    port: 80
+
+# 测试用例配转走
+testcase:
+    casepath: D:\code\python\cronusweb\case   # 测试用例目录
+    casedata: D:\code\python\cronusweb\data   # 测试数据目录
+
+# 数据库地址管理
+database:
+    class: mysql
+    host: 172.16.225.15
+    port: 3306
+    db: zeus
+    user: root
+    password: fadskfhld
+    # charset: utf-8
+# 日志管理
+logger:
+    path: D:\code\python\cronusweb\log
+    level: debug
+
+# redis配置管理
+redis:
+    host: 127.0.0.1
+    port: 6379
+
+# 邮件配置
+email:
+  smtpserver: smtp.163.com
+  sender: test1@163.com
+  receiver: test2@163.com
+  username: test1@163.com
+  password: 12345678
+
+
+
+

@@ -1,0 +1,31 @@
+case_suite: saber_referral_wechat_test
+descrpiton: 转介绍活动小程序端接口测试
+moduels:
+  - moduel_class: TestUserPersonal
+    desc: 转介绍小程序人个中心
+    cases:
+      - story: test_card_information_add
+        desc: 领取信息提交
+        uri: /saber/front/wx-user/create-or-update-info
+        method: post
+        headers:
+          Token: ciJFdpXljHW0p9317P3ms-4aaHdV5ya9
+        type: data
+        data:
+          openid: oGCgV0W-wQLz8rZDDsqZLFgwWboM
+          name: 董杰
+          id_card: ${identity()|libs.keywords}
+          phone: ${mobile_phone(134)|libs.keywords}
+          bank_name: ${chinese(10)|libs.keywords}
+          bank_pac: 广东省-广州市-海珠区
+          bank_branch: ${chinese(20)|libs.keywords}
+          bank_card_no: 1111111111111
+          address_name: ${chinese(20)|libs.keywords}
+          address_phone: ${mobile_phone(134)|libs.keywords}
+          address: ${chinese(10)|libs.keywords}
+        set_up:
+        tear_down:
+        asserts:
+          http_code: 200
+          body.status: '00000'
+          body.msg: 操作成功

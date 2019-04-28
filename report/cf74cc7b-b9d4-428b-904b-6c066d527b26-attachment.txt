@@ -1,0 +1,128 @@
+logs.py                     60 DEBUG    发送请求地址: http://sendsms.cronus.manager.sunlands/wifi/v1/frontend/school/directions	POST	
+logs.py                     60 DEBUG    发送请求数据: {'school_id': '5080'}	
+logs.py                     60 DEBUG    返回请求地址: http://sendsms.cronus.manager.sunlands/wifi/v1/frontend/school/directions	200	146.662ms
+logs.py                     60 DEBUG    返回请求头:
+{
+    "Server": "nginx/1.12.2",
+    "Date": "Thu, 28 Mar 2019 08:02:32 GMT",
+    "Content-Type": "application/json; charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Keep-Alive": "timeout=100",
+    "X-Powered-By": "PHP/7.1.18",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "POST,DELETE,GET,OPTIONS",
+    "Access-Control-Allow-Headers": "x-requested-with,content-type,token",
+    "Access-Control-Expose-Headers": "token",
+    "Access-Control-Max-Age": "3600",
+    "Connection": "keep-alive"
+}
+logs.py                     60 DEBUG    请求结果:
+{
+    "resultMark": "success",
+    "code": 200,
+    "data": {
+        "transit": [
+            {
+                "describe": "有205.215.231.232",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc3NDhhMmU3LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "公交站广场南路北口下车",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc3YWQyN2VmLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "过个马路或下车右边找到这个卡伦比咖啡",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc4MTU3YmQ0LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "进入这条巷子往右走",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc4NTFjMGM0LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到恒茂国际华城B栋",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc4OGJmZWFkLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到电梯按下20楼",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc4YzEzZTYwLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "出电梯后就能找到我们分校了",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjc4ZmJjNzM3LmpwZw==/600/400/1"
+            }
+        ],
+        "metro": [
+            {
+                "describe": "地铁一号线八一广场4号出口",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjY5MjQ4NzYwLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "出了地铁口右拐可以看到我们的国旗",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjY5ODg5MDY4LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "然后往我们著名的八一起义纪念塔方向走来",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjY5YzFkNzA1LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "靠纪念塔右走往左看就能看到我们这两栋写字楼",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjY5ZjNjNjVhLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "靠右边直走就能看到我们的天桥过道.然后走到对面",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjZhMzU1ZTlhLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "下楼梯后往右行走就能直视我们的两栋大楼了",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjZhNmU4ZTdkLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "然后找到我们的苏宁易购 华城路的路牌左拐",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjZhZjBiMDdjLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "就能看到我们分校坐在大楼的B栋了",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjZiM2NkNWQ1LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "坐电梯到20楼 尚德南昌分校就到了",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjZiNzA2NzgzLmpwZw==/600/400/1"
+            }
+        ],
+        "drive": [
+            {
+                "describe": "驾车导航至目的地.该大厦提供地下停车场",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjdmNzk0Nzc4LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到苏宁易购这条路口右拐进来",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjgwMWQ0NTJjLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到恒茂国际B栋",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjgwNTcxZGE4LmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到电梯双梯18或20",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjgwOTcyNjJhLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "找到电梯单梯19或21",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjgwYzc4NDdiLmpwZw==/600/400/1"
+            },
+            {
+                "describe": "到达尚德南昌分校\r\n",
+                "path": "http://itles.cronus.manager.sunlands/wifi/v1/frontend/index/image-resize/L3VwbG9hZC8yMDE4MDQyNi81YWUxNjgxMDg1ZmEzLmpwZw==/600/400/1"
+            }
+        ],
+        "school_name": "南昌校",
+        "school_id": "5080"
+    },
+    "message": ""
+}
+
+logs.py                     60 DEBUG    断言对象:http_code
+logs.py                     60 DEBUG    断言对象取值:200
+logs.py                     60 DEBUG    断言对象:body.code
+logs.py                     60 DEBUG    断言对象取值:200
